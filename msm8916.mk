@@ -118,6 +118,9 @@ PRODUCT_PACKAGES += \
     libbt-vendor
 
 # Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl
+
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.hfp.client=1 \
     ro.bluetooth.dun=true \
