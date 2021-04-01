@@ -77,10 +77,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
-ifneq ($(USE_CUSTOM_MIXER_PATHS), true)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
-endif
+#ifneq ($(USE_CUSTOM_MIXER_PATHS), true)
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
+#endif
 
 # Audio encoders
 PRODUCT_PROPERTY_OVERRIDES += \
