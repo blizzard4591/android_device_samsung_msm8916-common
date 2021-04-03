@@ -25,7 +25,7 @@ vendor/lib/libaptXHD_encoder.so|b65cd3b72ae3e6a57901fd5b5383bfa1a88c5737
 # Bluetooth
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|dfe077d09d2c89e80429d68c70e6bb80286afb1e
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so|c31edee39b8c25fe0fba7efd36267ffded5785c6
--vendor/lib/libbtnv.so|9b6845a4206e1423b9d476fd6e290930ec6d0d4a
+-vendor/lib/libbtnv.so|b43a18062fffaa080834f5b6b4ee2f80d1bb5a22
 
 # Camera
 bin/mm-qcamera-daemon
@@ -44,7 +44,7 @@ vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 
 # Camera - wf-crackling-7.1-TOS093F-a29b96e3d6
-vendor/lib/libmmcamera_faceproc.so|8e6a95d0dd0d282f96cc905c11c1a738
+vendor/lib/libmmcamera_faceproc.so|ac49bcc1aa20ff9f2c118f6c233b658f93543202
 
 # DRM
 bin/qcom-system-daemon
@@ -73,44 +73,44 @@ vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
 
 # GPS - From Crackling
 bin/loc_launcher
--lib/libloc_api_v02.so|03860b5a4e72edd96c9acce3886b6d23
--lib/libloc_ds_api.so|31c3c73f4e449eded83f32eabc561c29
-vendor/lib/hw/flp.default.so|48b1901aac6ce882c415dcbbffc36432
-vendor/lib/libflp.so|8ecc18a88b768e65ade0c2f900aa3699
-vendor/lib/libgeofence.so|862cfcd014939ba68c2418488c00a724
-vendor/lib/libizat_core.so|393277601ff816ab2fabe41fea68fca3
-vendor/lib/liblbs_core.so|be81bdae864452bc38544db8184303c6
+-lib/libloc_api_v02.so|36c803348e05dc086eb14c21b6aa62da78b76be7
+-lib/libloc_ds_api.so|525c5198fb93b5043c87b1cf2f6c015a083a8609
+vendor/lib/hw/flp.default.so|9315855b0b5ab0154153cfb50d9667cda8363d4e
+vendor/lib/libflp.so|49bb0a76e2fbfa4be0d00b2f75f18d0a13aee4e4
+vendor/lib/libgeofence.so|7640de207990c06fe20d7260950beb339211b851
+vendor/lib/libizat_core.so|4fa4420c537d14ff3db3de069623a9c81ba0d8ff
+vendor/lib/liblbs_core.so|6760763f2b7cd639d9af5bdc15994b15aa2b614e
 
 # Graphics - wf-crackling-7.1-TOS111B
-vendor/lib/egl/eglsubAndroid.so|21442267a5e128873442ad9d38475e07
-vendor/lib/egl/eglSubDriverAndroid.so|1e34bc15a3bbcc3eb69a9f1fd525cb0b
-vendor/lib/egl/libEGL_adreno.so|cce3189ca361b239d53db58060893eab
-vendor/lib/egl/libESXEGL_adreno.so|ece400a0d1f05d3e5f0fe3f704e6898d
-vendor/lib/egl/libESXGLESv1_CM_adreno.so|6cd4b8adf65f35ae86e33b531da6068d
-vendor/lib/egl/libESXGLESv2_adreno.so|9a89a84193b17680c1c4a66591d76a43
-vendor/lib/egl/libGLESv1_CM_adreno.so|0b3093145eafb04523844940a4a36af9
-vendor/lib/egl/libGLESv2_adreno.so|bd12ff8d2017689040b80206bfac0b9a
-vendor/lib/egl/libq3dtools_adreno.so|493cb66c4ff6723af6577e83803957b3
-vendor/lib/egl/libQTapGLES.so|374f04a7a7c65d7676e781f0552cd1ca
-vendor/lib/egl/libRBEGL_adreno.so|f2fc963450474859aa7c7ccf6fac92b6
-vendor/lib/egl/libRBGLESv1_CM_adreno.so|5719e42981a1acc1df1a8878312bdca5
-vendor/lib/egl/libRBGLESv2_adreno.so|4d831f9d61222398f09eb15d4f4e7395
-vendor/lib/libadreno_utils.so|b74a626858dd1b3411e8199694bd5da8
+vendor/lib/egl/eglsubAndroid.so|81c714836760f8ef71e6d1516cbfdd2e6910c587
+vendor/lib/egl/eglSubDriverAndroid.so|0331bafd1d7fdb3dae517cf63981f990b3604701
+vendor/lib/egl/libEGL_adreno.so|cfd56d8550fa5558ab8e44a54537c940345580c3
+vendor/lib/egl/libESXEGL_adreno.so|facfab179b35fc01160da5b0cca1ca74c11a9c21
+vendor/lib/egl/libESXGLESv1_CM_adreno.so|db241d7f12c5a3bdc2d8c75add4ed740b8d1d335
+vendor/lib/egl/libESXGLESv2_adreno.so|4c954ccc013430f2e1bc6d15d3780116d1344b29
+vendor/lib/egl/libGLESv1_CM_adreno.so|c3ee8a4861ac907eb892aba54c6672eb05500ed5
+vendor/lib/egl/libGLESv2_adreno.so|7cd477d4722920e2b4848aa4d5c54e0ad9ecc65a
+vendor/lib/egl/libq3dtools_adreno.so|a38ac8d88dcd087b55137bf1549c95e31da695a3
+vendor/lib/egl/libQTapGLES.so|7596611d1ca94d9ac80f54b6956a3586bbbd2cf3
+vendor/lib/egl/libRBEGL_adreno.so|fb2f461eea19cd737f5a5c756e065fba886b739a
+vendor/lib/egl/libRBGLESv1_CM_adreno.so|118087dfbada31e95c3d12f2903a9b06d06e60bf
+vendor/lib/egl/libRBGLESv2_adreno.so|22e01791f60d0f38038f9bb8146e5c723295ce6d
+vendor/lib/libadreno_utils.so|5e08564566cc29f6730a0ca3ecc950a4417d26f1
 vendor/lib/libbccQTI.so
-vendor/lib/libC2D2.so|9ce02ff41421ec64d26b571c479fe6ca
-vendor/lib/libc2d30-a3xx.so|91c8e82b10afda25a727ffc94dad5bc5
-vendor/lib/libc2d30-a4xx.so|5fb624bd78b3ac8bacd2a9f1226db103
-vendor/lib/libCB.so|40daed628f19ef2f625ca7fca559d0b7
-vendor/lib/libgsl.so|06a985c79c24b850ec4a03e89bd4e208
-vendor/lib/libllvm-glnext.so|df95f2de1e3468b8caf8ecb6839a6477
-vendor/lib/libllvm-qcom.so|8c40927b9b56047447c42d0a23081ef1
-vendor/lib/libOpenCL.so|c68ff0a56dc1c98be520b08e7eb6fee1
-vendor/lib/librs_adreno.so|40dbf893c0fd2ad8583d9937e9c92d3f
-vendor/lib/librs_adreno_sha1.so|4f695154805ab290651af850fad24d81
-vendor/lib/libRSDriver_adreno.so|bd572f3fc34e9dd747753f14a73fb133
+vendor/lib/libC2D2.so|eb55372ad7b1b89f78d96fd77bd82c6e467c7df0
+vendor/lib/libc2d30-a3xx.so|371d6688b6140a2974da005a8f149a964884d0e3
+vendor/lib/libc2d30-a4xx.so|89a913924c5bdffea666a97fc9e867a48a92520a
+vendor/lib/libCB.so|ef749cfbfe44dabe1c42fef3980f4407bad5c531
+vendor/lib/libgsl.so|158be0351abcf84b939a1c8a9838eed526ccc9e2
+vendor/lib/libllvm-glnext.so|908e4d6e413a0ba6bd57a3b84b071027e1d9ec21
+vendor/lib/libllvm-qcom.so|6fe4aa8684702cfdf09d720b8701988c9bda2ce0
+vendor/lib/libOpenCL.so|e1f8c3fdb58fa9fbb1465d909e9ab7ba31176bd6
+vendor/lib/librs_adreno.so|3687f82dd8cac1409a49574eaf894d955736db36
+vendor/lib/librs_adreno_sha1.so|a569453b844b9980f20ac459500c9ca63b8d010d
+vendor/lib/libRSDriver_adreno.so|779045a7351ded8affb6c5110d8a7b9101fb624a
 vendor/lib/libsc-a2xx.so
-vendor/lib/libsc-a3xx.so|42193ceddf52b1c6e5914d8c20c9f4ab
-vendor/lib/libscale.so|811e35d84497eeafd66952fba530c8b8
+vendor/lib/libsc-a3xx.so|8381a4ab4d9dda8fa9b1ee8416c76833618a18ed
+vendor/lib/libscale.so|4e7752b6c12e4ff3ab7ae89c53a0b3ad9809f5ec
 
 # Graphics Firmware
 etc/firmware/a300_pfp.fw
@@ -218,7 +218,7 @@ bin/irsc_util
 lib/libgdmcprov.so
 
 # STLport
-vendor/lib/libstlport.so|76fbc529632aae39370a7f28a1d839cd
+vendor/lib/libstlport.so|e61ef21decc21472e06eacc841e7d61bf68ca9f3
 
 # Thermal
 vendor/bin/thermal-engine
@@ -232,8 +232,8 @@ vendor/lib/libTimeService.so
 -vendor/lib/libtime_genoff.so
 
 # Widevine - bullhead
-vendor/lib/drm/libdrmwvmplugin.so|6cfb61cd247076409a3a4e3f6ddecf24
-vendor/lib/libwvdrm_L1.so|a19e8a30943ed66d51f58504673e72c4
-vendor/lib/libwvm.so|dcd816349037aa40f0e5ff9d141c70cc
-vendor/lib/libWVStreamControlAPI_L1.so|74e4a4ba035ed5da9b81cc2cc3929151
-vendor/lib/mediadrm/libwvdrmengine.so|76d0add4f3f259030ef4ffb14dc92a2e
+vendor/lib/drm/libdrmwvmplugin.so|3bee766222895f524421eb996ca6a08bcf95f19f
+vendor/lib/libwvdrm_L1.so|3eaf8ed1cb337608a1ccdb80d2c95804e7aea323
+vendor/lib/libwvm.so|59c4c078f4b897ddac8f665309b7a3f25522f207
+vendor/lib/libWVStreamControlAPI_L1.so|6b28492ac55b9a3d86993343cf2c8b55240b3420
+vendor/lib/mediadrm/libwvdrmengine.so|1987f7a517acfbec62438a0515a9aa87a363f0f7
