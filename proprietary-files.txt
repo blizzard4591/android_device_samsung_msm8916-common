@@ -25,7 +25,7 @@ vendor/lib/libaptXHD_encoder.so|b65cd3b72ae3e6a57901fd5b5383bfa1a88c5737
 # Bluetooth
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|dfe077d09d2c89e80429d68c70e6bb80286afb1e
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so|c31edee39b8c25fe0fba7efd36267ffded5785c6
--vendor/lib/libbtnv.so|b43a18062fffaa080834f5b6b4ee2f80d1bb5a22
+vendor/lib/libbtnv.so|b43a18062fffaa080834f5b6b4ee2f80d1bb5a22
 
 # Camera
 bin/mm-qcamera-daemon
@@ -73,8 +73,8 @@ vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
 
 # GPS - From Crackling
 bin/loc_launcher
--lib/libloc_api_v02.so|36c803348e05dc086eb14c21b6aa62da78b76be7
--lib/libloc_ds_api.so|525c5198fb93b5043c87b1cf2f6c015a083a8609
+lib/libloc_api_v02.so|36c803348e05dc086eb14c21b6aa62da78b76be7
+lib/libloc_ds_api.so|525c5198fb93b5043c87b1cf2f6c015a083a8609
 vendor/lib/hw/flp.default.so|9315855b0b5ab0154153cfb50d9667cda8363d4e
 vendor/lib/libflp.so|49bb0a76e2fbfa4be0d00b2f75f18d0a13aee4e4
 vendor/lib/libgeofence.so|7640de207990c06fe20d7260950beb339211b851
