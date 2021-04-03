@@ -25,7 +25,7 @@ vendor/lib/libaptXHD_encoder.so|b65cd3b72ae3e6a57901fd5b5383bfa1a88c5737
 # Bluetooth
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|dfe077d09d2c89e80429d68c70e6bb80286afb1e
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so|c31edee39b8c25fe0fba7efd36267ffded5785c6
-vendor/lib/libbtnv.so|b43a18062fffaa080834f5b6b4ee2f80d1bb5a22
+vendor/lib/libbtnv.so|9b6845a4206e1423b9d476fd6e290930ec6d0d4a
 
 # Camera
 bin/mm-qcamera-daemon
@@ -73,44 +73,44 @@ vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
 
 # GPS - From Crackling
 bin/loc_launcher
-lib/libloc_api_v02.so|36c803348e05dc086eb14c21b6aa62da78b76be7
-lib/libloc_ds_api.so|525c5198fb93b5043c87b1cf2f6c015a083a8609
-vendor/lib/hw/flp.default.so|9315855b0b5ab0154153cfb50d9667cda8363d4e
+lib/libloc_api_v02.so|74df1667c42701ef550ba73db6c5ae63542913ac
+lib/libloc_ds_api.so|2124d2df231d1e3ccb7f22c6227f6112f4013485
+vendor/lib/hw/flp.default.so|c281157957565dc35f7e1731b2c71a71a532a821
 vendor/lib/libflp.so|49bb0a76e2fbfa4be0d00b2f75f18d0a13aee4e4
-vendor/lib/libgeofence.so|7640de207990c06fe20d7260950beb339211b851
-vendor/lib/libizat_core.so|4fa4420c537d14ff3db3de069623a9c81ba0d8ff
-vendor/lib/liblbs_core.so|6760763f2b7cd639d9af5bdc15994b15aa2b614e
+vendor/lib/libgeofence.so|bd34516de3c933d81267822716235c358ab6695d
+vendor/lib/libizat_core.so|8a948e4f2aa38463050c6399f04ecb38564689d6
+vendor/lib/liblbs_core.so|10caf0d54768114cd471c33a1e2dc6385d3c7707
 
 # Graphics - wf-crackling-7.1-TOS111B
-vendor/lib/egl/eglsubAndroid.so|81c714836760f8ef71e6d1516cbfdd2e6910c587
-vendor/lib/egl/eglSubDriverAndroid.so|0331bafd1d7fdb3dae517cf63981f990b3604701
-vendor/lib/egl/libEGL_adreno.so|cfd56d8550fa5558ab8e44a54537c940345580c3
-vendor/lib/egl/libESXEGL_adreno.so|facfab179b35fc01160da5b0cca1ca74c11a9c21
-vendor/lib/egl/libESXGLESv1_CM_adreno.so|db241d7f12c5a3bdc2d8c75add4ed740b8d1d335
-vendor/lib/egl/libESXGLESv2_adreno.so|4c954ccc013430f2e1bc6d15d3780116d1344b29
-vendor/lib/egl/libGLESv1_CM_adreno.so|c3ee8a4861ac907eb892aba54c6672eb05500ed5
-vendor/lib/egl/libGLESv2_adreno.so|7cd477d4722920e2b4848aa4d5c54e0ad9ecc65a
-vendor/lib/egl/libq3dtools_adreno.so|a38ac8d88dcd087b55137bf1549c95e31da695a3
-vendor/lib/egl/libQTapGLES.so|7596611d1ca94d9ac80f54b6956a3586bbbd2cf3
-vendor/lib/egl/libRBEGL_adreno.so|fb2f461eea19cd737f5a5c756e065fba886b739a
-vendor/lib/egl/libRBGLESv1_CM_adreno.so|118087dfbada31e95c3d12f2903a9b06d06e60bf
-vendor/lib/egl/libRBGLESv2_adreno.so|22e01791f60d0f38038f9bb8146e5c723295ce6d
-vendor/lib/libadreno_utils.so|5e08564566cc29f6730a0ca3ecc950a4417d26f1
+vendor/lib/egl/eglsubAndroid.so|a80ffa441af58222dc43ba2a15fb2d4f2a9fae59
+vendor/lib/egl/eglSubDriverAndroid.so|6f5ae2f50bae4917173bc1f23eedbb932e068994
+vendor/lib/egl/libEGL_adreno.so|c30e4b0741e48c424aea23bf74dbf0e8b3a99369
+vendor/lib/egl/libESXEGL_adreno.so|7fb1078f65d5ccec000e90466e347308d7faa98b
+vendor/lib/egl/libESXGLESv1_CM_adreno.so|817a1ecda830c46c170b2733b2fbc26f97b04180
+vendor/lib/egl/libESXGLESv2_adreno.so|377452ed2d1b0655d7eca4a03fb763d7043aba30
+vendor/lib/egl/libGLESv1_CM_adreno.so|629e554170807f47a6790d559952ede06df0c9a6
+vendor/lib/egl/libGLESv2_adreno.so|70c7d8a44042fd0a9280c8ed2e9e738c3f14b0c3
+vendor/lib/egl/libq3dtools_adreno.so|4c3a394cd397e05b0794aa1bb16531da4c03855d
+vendor/lib/egl/libQTapGLES.so|900229ff94bbc44722d0df2a685b8ad2fbf1c51e
+vendor/lib/egl/libRBEGL_adreno.so|ce9a65968612e852d01f0bd6e1743dce015db7d1
+vendor/lib/egl/libRBGLESv1_CM_adreno.so|8c8491f0f4decb8658af866e32fc083322095f20
+vendor/lib/egl/libRBGLESv2_adreno.so|4bd77c04fc435de9d198da0233513dda6e557dab
+vendor/lib/libadreno_utils.so|522db7791ef53fc0747fc66274e3d9d01ac7b406
 vendor/lib/libbccQTI.so
-vendor/lib/libC2D2.so|eb55372ad7b1b89f78d96fd77bd82c6e467c7df0
-vendor/lib/libc2d30-a3xx.so|371d6688b6140a2974da005a8f149a964884d0e3
-vendor/lib/libc2d30-a4xx.so|89a913924c5bdffea666a97fc9e867a48a92520a
+vendor/lib/libC2D2.so|cea171dbb9aa813fb1d2255a8816cd67555bfded
+vendor/lib/libc2d30-a3xx.so|39569008421b7841f567c0a4525638d81d32ffe7
+vendor/lib/libc2d30-a4xx.so|f9afec859c654cb646a27af8f9e16e8a8c412055
 vendor/lib/libCB.so|ef749cfbfe44dabe1c42fef3980f4407bad5c531
 vendor/lib/libgsl.so|158be0351abcf84b939a1c8a9838eed526ccc9e2
-vendor/lib/libllvm-glnext.so|908e4d6e413a0ba6bd57a3b84b071027e1d9ec21
-vendor/lib/libllvm-qcom.so|6fe4aa8684702cfdf09d720b8701988c9bda2ce0
+vendor/lib/libllvm-glnext.so|2e5785200004df231403074c0f6d7d87bf395745
+vendor/lib/libllvm-qcom.so|77f2a0adf9c36291a02055be3fcd1cf5fa82a113
 vendor/lib/libOpenCL.so|e1f8c3fdb58fa9fbb1465d909e9ab7ba31176bd6
-vendor/lib/librs_adreno.so|3687f82dd8cac1409a49574eaf894d955736db36
-vendor/lib/librs_adreno_sha1.so|a569453b844b9980f20ac459500c9ca63b8d010d
-vendor/lib/libRSDriver_adreno.so|779045a7351ded8affb6c5110d8a7b9101fb624a
+vendor/lib/librs_adreno.so|7f0fe9802d2bd832b98848d7436ae1aafbe52221
+vendor/lib/librs_adreno_sha1.so|3289659eb1307377b20fb33ca4b8d42e15532612
+vendor/lib/libRSDriver_adreno.so|2c9d23e4555f76c1aa28eb5aea2fa919081a8654
 vendor/lib/libsc-a2xx.so
-vendor/lib/libsc-a3xx.so|8381a4ab4d9dda8fa9b1ee8416c76833618a18ed
-vendor/lib/libscale.so|4e7752b6c12e4ff3ab7ae89c53a0b3ad9809f5ec
+vendor/lib/libsc-a3xx.so|a03fc9f0c929cb4adf013f8a463cfbef68d48090
+vendor/lib/libscale.so|972cbd87794b4ce0a5c23db946acbafd4cd6d073
 
 # Graphics Firmware
 etc/firmware/a300_pfp.fw
