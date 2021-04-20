@@ -785,6 +785,7 @@ service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
 on property:sys.boot_completed=1
     start vendor.qcom-post-boot
     setprop sys.io.scheduler "bfq"
+    setprop vendor.post_boot.parsed 1
 
 # Enable Touch Devices
     write /sys/class/touch_key/control manual
