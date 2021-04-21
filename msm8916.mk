@@ -71,24 +71,50 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service \
-
-PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
 
 PRODUCT_PACKAGES += \
     libbase_shim \
     libbt-vendor
 
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service \
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.hfp.client=1 \
+    ro.bluetooth.dun=true \
+    ro.bluetooth.hfp.ver=1.7 \
+    ro.bluetooth.sap=true \
+    ro.qualcomm.bt.hci_transport=smd \
+    vendor.bluetooth.soc=pronto \
+    vendor.qcom.bluetooth.soc=pronto
+
+
+
+# BoringSSL Hacks
+PRODUCT_PACKAGES += \
+    libboringssl-compat
+
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
+# Camera
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_treble=true \
+    camera2.portability.force_api=1 \
+    debug.camcorder.disablemeta=true
 
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     libcamera_shim \
+    libmm-qcamera \
     camera.msm8916 \
     Snap
 
@@ -168,6 +194,17 @@ PRODUCT_PACKAGES += \
     libshim_gps \
     liblocadapterbase_shim
 
+# GPS Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.gps.qc_nlp_in_use=1 \
+    persist.loc.nlp_name=com.qualcomm.location \
+    ro.gps.agps_provider=1 \
+    ro.pip.gated=0
+
+# Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := \
+    hardware/qcom/msm8916/kernel-headers
+
 # Health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -232,15 +269,45 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
+    libOmxSwVencMpeg4 \
     libOmxVdec \
-    libOmxVenc
+    libOmxVdecHevc \
+    libOmxVenc \
+    libOmxVidEnc \
+    libOmxVdpp
+
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0 \
+    persist.media.treble_omx=false \
+    media.aac_51_output_enabled=true \
+    media.stagefright.enable-aac=true \
+    media.stagefright.enable-fma2dp=true \
+    media.stagefright.enable-http=true \
+    media.stagefright.enable-player=true \
+    media.stagefright.enable-qcp=true \
+    media.stagefright.enable-scan=true \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true \
+    media.stagefright.use-awesome=true \
+    media.swhevccodectype=0 \
+    debug.stagefright.ccodec=0 \
+    mm.enable.qcom_parser=3183219 \
+    mm.enable.smoothstreaming=true \
+    mmp.enable.3g2=true
 
 # Misc
 PRODUCT_PACKAGES += \
     curl \
+    libbson \
     libcurl \
     libkeyutils \
     tcpdump
+
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=libqti-perfd-client.so
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -279,11 +346,11 @@ PRODUCT_COPY_FILES += \
 include $(LOCAL_PATH)/prop.mk
 
 # Radio
-#PRODUCT_PACKAGES += \
-#    librmnetctl \
-#    libshim_secril \
-#    libxml2 \
-#    macloader
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    libshim_secril \
+    libxml2 \
+    macloader
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -317,6 +384,29 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
+
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.rild.nitz_long_ons_0="" \
+    persist.rild.nitz_long_ons_1="" \
+    persist.rild.nitz_long_ons_2="" \
+    persist.rild.nitz_long_ons_3="" \
+    persist.rild.nitz_plmn="" \
+    persist.rild.nitz_short_ons_0="" \
+    persist.rild.nitz_short_ons_1="" \
+    persist.rild.nitz_short_ons_2="" \
+    persist.rild.nitz_short_ons_3="" \
+    ril.subscription.types=NV,RUIM \
+    DEVICE_PROVISIONED=1 \
+    rild.libpath=/system/lib/libsec-ril.so \
+    ro.multisim.set_audio_params=true
+
+# SAMP SPCM
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.config.samp_spcm_enable=true \
+    sys.config.spcm_db_enable=true \
+    sys.config.spcm_db_launcher=true \
+    sys.config.spcm_preload_enable=true
 
 # Security configuration file
 PRODUCT_COPY_FILES += \
@@ -363,8 +453,10 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service.legacy \
+    android.hardware.wifi.offload@1.0-service \
     hostapd \
     hostapd_cli \
+    iwconfig \
     libwpa_client \
     libwcnss_qmi \
     wcnss_service \
