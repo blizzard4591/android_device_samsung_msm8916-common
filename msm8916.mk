@@ -69,6 +69,10 @@ PRODUCT_COPY_FILES += \
 #    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 #endif
 
+# Audio encoders
+PRODUCT_PROPERTY_OVERRIDES += \
+    qcom.hw.aac.encoder=false
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
@@ -128,6 +132,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     $(LOCAL_PATH)/configs/data/qmi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/qmi_config.xml
 
+# Data modules
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.data.netmgrd.qos.enable=false \
+    ro.use_data_netmgrd=false
+
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     TrebuchetQuickStep \
@@ -172,6 +181,17 @@ PRODUCT_PACKAGES += \
 # FS
 PRODUCT_PACKAGES += \
     fsck.f2fs
+
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_gl_backpressure=1 \
+    debug.composition.type=c2d \
+    debug.egl.hw=1 \
+    debug.sf.hw=1 \
+    debug.hwui.use_buffer_age=false
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -351,6 +371,11 @@ PRODUCT_PACKAGES += \
     libshim_secril \
     libxml2 \
     macloader
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.add_power_save=1 \
+    persist.radio.apm_sim_not_pwdn=1 \
+    persist.radio.sib16_support=1
 
 # Rootdir
 PRODUCT_PACKAGES += \
