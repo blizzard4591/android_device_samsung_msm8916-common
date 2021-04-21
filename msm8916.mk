@@ -115,7 +115,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-impl-legacy \
     android.hardware.camera.provider@2.4-service \
     libcamera_shim \
     libmm-qcamera \
@@ -153,6 +153,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.msm8916 \
     hwcomposer.msm8916 \
+    libgenlock \
     libtinyxml \
     libtinyxml2 \
     memtrack.msm8916 \
