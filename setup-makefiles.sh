@@ -11,7 +11,7 @@ set -e
 DEVICES_A3="a3lte a33g a3ulte"
 DEVICES_A5="a5ltechn a5ltectc"
 DEVICES_GPRIME="fortuna3g fortunave3g fortunalteub gprimelte gprimeltexx gprimeltespr gprimeltetfnvzw gprimeltezt gprimeltectc"
-DEVICES_GTE="gtelwifiue gtesqltespr gt510wifi"
+DEVICES_GTE="gtelwifiue gtesqltespr gt510wifi gt510lte"
 DEVICES_J3="j3ltectc j3ltespr"
 DEVICES_J3XPRO="j3xprolte"
 DEVICES_J5="j53gxx j5lte j5ltechn j5nlte"
