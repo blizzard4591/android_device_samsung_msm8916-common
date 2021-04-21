@@ -385,22 +385,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
-# RIL
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.rild.nitz_long_ons_0="" \
-    persist.rild.nitz_long_ons_1="" \
-    persist.rild.nitz_long_ons_2="" \
-    persist.rild.nitz_long_ons_3="" \
-    persist.rild.nitz_plmn="" \
-    persist.rild.nitz_short_ons_0="" \
-    persist.rild.nitz_short_ons_1="" \
-    persist.rild.nitz_short_ons_2="" \
-    persist.rild.nitz_short_ons_3="" \
-    ril.subscription.types=NV,RUIM \
-    DEVICE_PROVISIONED=1 \
-    rild.libpath=/system/lib/libsec-ril.so \
-    ro.multisim.set_audio_params=true
-
 # SAMP SPCM
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.config.samp_spcm_enable=true \
