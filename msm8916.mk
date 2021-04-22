@@ -340,10 +340,9 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
 # Vibrator
-#vibrator causes stuck at bootanimation in previous releases
-#PRODUCT_PACKAGES += \
-#    android.hardware.vibrator@1.0-impl \
-#    android.hardware.vibrator@1.0-service
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
 
 # Wifi configuration files
 PRODUCT_COPY_FILES += \
