@@ -113,6 +113,7 @@ vendor/lib/libRSDriver_adreno.so|bd572f3fc34e9dd747753f14a73fb133
 vendor/lib/libsc-a2xx.so
 vendor/lib/libsc-a3xx.so|42193ceddf52b1c6e5914d8c20c9f4ab
 vendor/lib/libscale.so|811e35d84497eeafd66952fba530c8b8
+lib/libLLVM.so:vendor/lib/libLLVM.so
 
 # Graphics Firmware
 etc/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw
@@ -141,6 +142,14 @@ lib/libsomxmp3d.so:vendor/lib/libsomxmp3d.so
 lib/libsomxmp4vdsw.so:vendor/lib/libsomxmp4vdsw.so
 lib/libsomxnaace.so:vendor/lib/libsomxnaace.so
 lib/libsomxvp8d.so:vendor/lib/libsomxvp8d.so
+lib/libsavscmn.so:vendor/lib/libsavscmn.so
+lib/libsavsvc.so:vendor/lib/libsavsvc.so
+lib/libsavsac.so:vendor/lib/libsavsac.so
+lib/libsnamrnb.so:vendor/lib/libsnamrnb.so
+lib/libsnamrwb.so:vendor/lib/libsnamrwb.so
+lib/libsxqk.so:vendor/lib/libsxqk.so
+lib/libarac.so:vendor/lib/libarac.so
+lib/libsnaace.so:vendor/lib/libsnaace.so
 vendor/lib/libhwdaphal.so
 vendor/lib/libExtendedExtractor.so
 vendor/lib/libFlacSwDec.so
@@ -150,6 +159,7 @@ vendor/lib/libmm-color-convertor.so
 vendor/lib/libmm-disp-apis.so
 vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmparser.so
+vendor/lib/libmmparser_lite.so
 vendor/lib/libmm-qdcm.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxEvrcDec.so
@@ -190,6 +200,7 @@ bin/qmuxd:vendor/bin/qmuxd
 bin/radish:vendor/bin/radish
 bin/rmt_storage:vendor/bin/rmt_storage
 bin/wlandutservice:vendor/bin/wlandutservice
+lib/libwcnftms.so:vendor/lib/libwcnftms.so
 etc/plmn_delta.bin
 etc/plmn_se13.bin
 etc/srm.bin
@@ -218,6 +229,7 @@ lib/libseckeyprov.so:vendor/lib/libseckeyprov.so
 # Security
 bin/irsc_util:vendor/bin/irsc_util
 lib/libgdmcprov.so:vendor/lib/libgdmcprov.so
+vendor/lib/libMcClient.so
 
 # STLport
 vendor/lib/libstlport.so|76fbc529632aae39370a7f28a1d839cd
