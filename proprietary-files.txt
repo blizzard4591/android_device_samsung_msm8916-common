@@ -113,7 +113,7 @@ vendor/lib/libRSDriver_adreno.so|bd572f3fc34e9dd747753f14a73fb133
 vendor/lib/libsc-a2xx.so
 vendor/lib/libsc-a3xx.so|42193ceddf52b1c6e5914d8c20c9f4ab
 vendor/lib/libscale.so|811e35d84497eeafd66952fba530c8b8
-lib/libLLVM.so:vendor/lib/libLLVM.so
+lib/libLLVM.so
 
 # Graphics Firmware
 etc/firmware/a300_pfp.fw:vendor/firmware/a300_pfp.fw
