@@ -116,7 +116,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    libbson \
+    android.hardware.camera.provider@2.4-service \
+	libbson \
     libcamera_shim \
     libmm-qcamera \
     camera.msm8916 \
@@ -373,10 +374,6 @@ PRODUCT_PACKAGES += \
     libshim_secril \
     libxml2 \
     macloader
-
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0 \
-    android.hardware.radio.config@1.0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.add_power_save=1 \
