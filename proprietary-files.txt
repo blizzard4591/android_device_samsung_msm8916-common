@@ -80,7 +80,8 @@ bin/loc_launcher:vendor/bin/loc_launcher
 vendor/lib/hw/flp.default.so|48b1901aac6ce882c415dcbbffc36432
 vendor/lib/libflp.so|49bb0a76e2fbfa4be0d00b2f75f18d0a13aee4e4
 vendor/lib/libgeofence.so|862cfcd014939ba68c2418488c00a724
-vendor/lib/libizat_core.so|393277601ff816ab2fabe41fea68fca3
+# Hex-Edited, needs old libcutils.so
+vendor/lib/libizat_core.so|44bcda068931da7bcbc729e3c1a132e97db76546
 vendor/lib/liblbs_core.so|be81bdae864452bc38544db8184303c6
 
 # Graphics - wf-crackling-7.1-TOS111B
@@ -252,5 +253,8 @@ vendor/lib/libwvdrm_L1.so|a19e8a30943ed66d51f58504673e72c4
 vendor/lib/libwvm.so|dcd816349037aa40f0e5ff9d141c70cc
 vendor/lib/libWVStreamControlAPI_L1.so|74e4a4ba035ed5da9b81cc2cc3929151
 vendor/lib/mediadrm/libwvdrmengine.so|a1fe975741ac399133a6a5125d6b6b260ce9cba3
+
 # needed for compat
+lib/libcutils.so:lib/libcutils-old.so
 lib/libprotobuf-cpp-lite.so:lib/libprotobuf-cpp-lite-old.so
+lib/libprotobuf-cpp-full.so:lib/libprotobuf-cpp-full-old.so
