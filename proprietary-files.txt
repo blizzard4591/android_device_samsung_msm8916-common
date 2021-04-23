@@ -251,4 +251,6 @@ vendor/lib/drm/libdrmwvmplugin.so|6cfb61cd247076409a3a4e3f6ddecf24
 vendor/lib/libwvdrm_L1.so|a19e8a30943ed66d51f58504673e72c4
 vendor/lib/libwvm.so|dcd816349037aa40f0e5ff9d141c70cc
 vendor/lib/libWVStreamControlAPI_L1.so|74e4a4ba035ed5da9b81cc2cc3929151
-vendor/lib/mediadrm/libwvdrmengine.so|c38d221dcc260bc48aa033ee5e9cc9929e725987
+vendor/lib/mediadrm/libwvdrmengine.so|a1fe975741ac399133a6a5125d6b6b260ce9cba3
+# needed for compat
+lib/libprotobuf-cpp-lite.so:lib/libprotobuf-cpp-lite-old.so
