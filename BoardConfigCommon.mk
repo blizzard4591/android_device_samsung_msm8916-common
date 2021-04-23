@@ -20,6 +20,8 @@ COMMON_PATH := device/samsung/msm8916-common
 
 BUILD_BROKEN_DUP_RULES := true
 
+TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
+
 # Architecture/platform
 FORCE_32_BIT := true
 TARGET_ARCH := arm
