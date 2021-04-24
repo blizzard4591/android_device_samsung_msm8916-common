@@ -160,7 +160,8 @@ vendor/lib/libmm-abl-oem.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmm-disp-apis.so
 vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libmmparser.so
+# Hex-Edited for old libstagefright_foundation.so
+vendor/lib/libmmparser.so|735561f9e7c028754346986668cc48f92480e556
 vendor/lib/libmmparser_lite.so
 vendor/lib/libmm-qdcm.so
 vendor/lib/libOmxAacDec.so
@@ -250,7 +251,8 @@ vendor/lib/libTimeService.so
 # Widevine - bullhead
 vendor/lib/drm/libdrmwvmplugin.so|6cfb61cd247076409a3a4e3f6ddecf24
 vendor/lib/libwvdrm_L1.so|a19e8a30943ed66d51f58504673e72c4
-vendor/lib/libwvm.so|dcd816349037aa40f0e5ff9d141c70cc
+#Hex-Edited for old libstagefright_foundation.so
+vendor/lib/libwvm.so|a1717e49380c936bb409962a3b20942156bab4c1
 vendor/lib/libWVStreamControlAPI_L1.so|74e4a4ba035ed5da9b81cc2cc3929151
 vendor/lib/mediadrm/libwvdrmengine.so|a1fe975741ac399133a6a5125d6b6b260ce9cba3
 
