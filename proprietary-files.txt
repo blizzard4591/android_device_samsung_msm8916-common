@@ -50,7 +50,6 @@ vendor/lib/libmmcamera_faceproc.so|8e6a95d0dd0d282f96cc905c11c1a738
 
 # DRM
 bin/qcom-system-daemon:vendor/bin/qcom-system-daemon
-lib/libdrmdecrypt.so:vendor/lib/libdrmdecrypt.so
 lib/libhdcp2.so:vendor/lib/libhdcp2.so
 vendor/lib/libmmQSM.so
 vendor/lib/libmmrtpdecoder.so
@@ -221,9 +220,6 @@ vendor/lib/libxml.so
 
 # RIL
 lib/libaudio-ril.so:vendor/lib/libaudio-ril.so
-lib/libsecril-client.so:vendor/lib/libsecril-client.so
-vendor/lib/libril-qcril-hook-oem.so
-vendor/lib/libril-qc-radioconfig.so
 
 # Samsung libs
 lib/libsecnativefeature.so:vendor/lib/libsecnativefeature.so
