@@ -284,6 +284,10 @@ PRODUCT_PACKAGES += \
     libxml2 \
     macloader
 
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0-impl \
+    android.hardware.radio.service
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \
