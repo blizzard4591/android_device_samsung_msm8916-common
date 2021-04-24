@@ -285,13 +285,6 @@ PRODUCT_PACKAGES += \
     libxml2 \
     macloader
 
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0-impl \
-    android.hardware.radio@1.0-service \
-    android.hardware.radio@1.2-impl \
-    android.hardware.radio@1.2-service \
-    android.hardware.radio.config@1.0-service
-
 # Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -330,10 +323,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Sensor HAL
+# sensor needs to be passthrough and sensors.msm8916 needs to be removed in order to work
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service \
-    sensors.msm8916
+    android.hardware.sensors@1.0-impl
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
