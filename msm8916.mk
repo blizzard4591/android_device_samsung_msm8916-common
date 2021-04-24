@@ -281,6 +281,7 @@ include $(LOCAL_PATH)/prop.mk
 PRODUCT_PACKAGES += \
     librmnetctl \
     libshim_secril \
+    libshim_ril \
     libxml2 \
     macloader
 
