@@ -198,9 +198,7 @@ bin/netmgrd:vendor/bin/netmgrd
 bin/ftm_ptt:vendor/bin/ftm_ptt
 bin/ptt_socket_app:vendor/bin/ptt_socket_app
 bin/port-bridge:vendor/bin/port-bridge
-bin/qmuxd:vendor/bin/qmuxd
 bin/radish:vendor/bin/radish
-bin/rmt_storage:vendor/bin/rmt_storage
 bin/wlandutservice:vendor/bin/wlandutservice
 lib/libwcnftms.so:vendor/lib/libwcnftms.so
 etc/plmn_delta.bin
@@ -212,8 +210,6 @@ lib/libfactoryutil.so:vendor/lib/libfactoryutil.so
 lib/libomission_avoidance.so:vendor/lib/libomission_avoidance.so
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
-vendor/lib/libnetmgr.so
-vendor/lib/libperipheral_client.so
 vendor/lib/libsubsystem_control.so
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/libxml.so
@@ -247,10 +243,14 @@ vendor/lib/libTimeService.so
 # Widevine - bullhead
 vendor/lib/drm/libdrmwvmplugin.so|6cfb61cd247076409a3a4e3f6ddecf24
 vendor/lib/libwvdrm_L1.so|a19e8a30943ed66d51f58504673e72c4
+lib/libstagefright_foundation.so:lib/libstagefright_foundation-old.so
 #Hex-Edited for old libstagefright_foundation.so
 vendor/lib/libwvm.so|a1717e49380c936bb409962a3b20942156bab4c1
 vendor/lib/libWVStreamControlAPI_L1.so|74e4a4ba035ed5da9b81cc2cc3929151
 vendor/lib/mediadrm/libwvdrmengine.so|a1fe975741ac399133a6a5125d6b6b260ce9cba3
+vendor/lib/libwvhidl.so|e6a340508a2e81f6e1d54d4ee6515eb69af18aa5
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
 
 # needed for compat
 lib/libcutils.so:lib/libcutils-old.so
