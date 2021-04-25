@@ -322,11 +322,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
-# Sensor HAL
+# Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service \
-    sensors.msm8916
+    android.hardware.sensors@1.0-impl.samsung8916 \
+    android.hardware.sensors@1.0-service.samsung8916
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
